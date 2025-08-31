@@ -1,6 +1,8 @@
+<!-- =================== INICIO DOCUMENTO HTML =================== -->
 <!DOCTYPE html>
-
 <html lang="es">
+
+<!-- =================== HEAD: Metadatos, estilos y scripts =================== -->
 
 <head>
     <meta charset="utf-8" />
@@ -163,9 +165,14 @@
     </meta>
 </head>
 
+<!-- =================== INICIO BODY =================== -->
+
 <body id="bg">
+    <!-- =================== WRAPPER PRINCIPAL =================== -->
     <div class="page-wraper">
         <div id="loading-icon-bx"></div>
+
+        <!-- =================== HEADER Y MENÚ PRINCIPAL =================== -->
         <header class="header rs-nav header-transparent">
             <div class="sticky-header navbar-expand-lg">
                 <div class="menu-bar clearfix">
@@ -218,7 +225,9 @@
                 </div>
             </div>
         </header>
+        <!-- =================== CONTENIDO PRINCIPAL =================== -->
         <div class="page-content bg-white">
+            <!-- =================== SLIDER PRINCIPAL =================== -->
             <div class="rev-slider">
                 <div class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery36"
                     data-source="gallery" id="rev_slider_486_1_wrapper"
@@ -319,53 +328,133 @@
                     </div>
                 </div>
             </div>
+            <!-- =================== BLOQUE DE CONTENIDO =================== -->
             <div class="content-block">
+                <!-- =================== SERVICIOS PRINCIPALES =================== -->
                 <div class="section-area content-inner service-info-bx">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="service-bx">
-                                    <div class="action-box">
-                                        <img alt="Coche en la autoescuela" src="assets/images/our-services/coche.jpg" />
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                                <div class="card shadow-lg h-100 border-0 rounded-3 overflow-hidden custom-card">
+                                    <div class="image-wrapper">
+                                        <img src="assets/images/our-services/casa.jpg"
+                                            class="card-img-top img-fluid img-hover-zoom" alt="Clases teóricas online">
                                     </div>
-                                    <div class="info-bx text-center">
-                                        <div class="feature-box-sm radius bg-white">
-                                            <i class="fa fa-car text-primary"></i>
+                                    <div class="card-body text-center d-flex flex-column">
+                                        <div class="feature-box-sm radius bg-primary-light mb-3 d-inline-flex align-items-center justify-content-center mx-auto"
+                                            style="width:60px; height:60px; border-radius: 50%;">
+                                            <i class="fa fa-book text-primary fa-2x"></i>
                                         </div>
-                                        <h4>Carnet de Coche (Permiso B)</h4>
-                                        <a class="btn radius-xl" href="https://api.whatsapp.com/send?phone=34693573074"
-                                            target="_blank">Más Información</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <div class="service-bx">
-                                    <div class="action-box">
-                                        <img alt="Moto en la autoescuela" src="assets/images/our-services/moto.jpeg" />
-                                    </div>
-                                    <div class="info-bx text-center">
-                                        <div class="feature-box-sm radius bg-white">
-                                            <i class="fa fa-motorcycle text-primary"></i>
+                                        <h5 class="card-title fw-bold text-dark mb-3">1º Aprueba el teórico</h5>
+
+                                        <div class="accordion modern-accordion mt-auto" id="accordionTeorico">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTeorico">
+                                                    <div class="d-flex justify-content-center w-100">
+                                                        <button
+                                                            class="accordion-button collapsed custom-accordion-button"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapseTeorico" aria-expanded="false"
+                                                            aria-controls="collapseTeorico">
+                                                            Ver detalles
+                                                        </button>
+                                                    </div>
+                                                </h2>
+                                                <div id="collapseTeorico" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTeorico" data-parent="#accordionTeorico">
+                                                    <div class="accordion-body text-start custom-accordion-body">
+                                                        <p class="mb-2">Para preparar el <strong>examen teórico</strong>
+                                                            contamos con una <strong>plataforma web</strong>
+                                                            a la que podrás acceder las 24 horas del día. En ella
+                                                            encontrarás todo el
+                                                            temario explicado de la manera más sencilla y completa.</p>
+                                                        <p class="mb-2">Podrás estudiar y hacer los <strong>test de
+                                                                examen</strong> con las mismas
+                                                            preguntas que pueden caer desde tu móvil, ordenador o
+                                                            tablet.</p>
+                                                        <p class="mb-0">Tendrás a dos <strong>profesores
+                                                                titulados</strong> con amplísima experiencia y
+                                                            grandes resultados para resolver cualquier duda: podrás
+                                                            contactar a través
+                                                            de llamada o WhatsApp, en todo momento.</p>
+                                                        <p class="mb-0">Una vez te sientas preparado para realizar el
+                                                            examen, te
+                                                            solicitamos fecha y hora para que lo realices en las
+                                                            <strong>instalaciones de
+                                                                Marbella</strong>.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h4>Permisos de Moto (AM, A1, A2, A)</h4>
-                                        <a class="btn radius-xl" href="https://api.whatsapp.com/send?phone=34693573074"
-                                            target="_blank">Más Información</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="service-bx m-b0">
-                                    <div class="action-box">
-                                        <img alt="Clases teóricas online" src="assets/images/our-services/casa.jpg" />
-                                    </div>
-                                    <div class="info-bx text-center">
-                                        <div class="feature-box-sm radius bg-white">
-                                            <i class="fa fa-book text-primary"></i>
-                                        </div>
-                                        <h4>Teórico Online y Prácticas a Domicilio</h4>
-                                        <a class="btn radius-xl" href="https://matferline.com/acceso/index.php"
-                                            target="_blank">Acceder a
+
+                                        <a href="https://matferline.com/acceso/index.php" target="_blank"
+                                            class="btn btn-primary mt-4 radius-xl btn-hover-scale w-100">Acceder a
                                             Tests</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                                <div class="card shadow-lg h-100 border-0 rounded-3 overflow-hidden custom-card">
+                                    <div class="image-wrapper">
+                                        <img src="assets/images/our-services/coche.jpg"
+                                            class="card-img-top img-fluid img-hover-zoom"
+                                            alt="Clases prácticas de coche">
+                                    </div>
+                                    <div class="card-body text-center d-flex flex-column">
+                                        <div class="feature-box-sm radius bg-primary-light mb-3 d-inline-flex align-items-center justify-content-center mx-auto"
+                                            style="width:60px; height:60px; border-radius: 50%;">
+                                            <i class="fa fa-car text-primary fa-2x"></i>
+                                        </div>
+                                        <h5 class="card-title fw-bold text-dark mb-3">2º Comienza las prácticas</h5>
+
+                                        <div class="accordion modern-accordion mt-auto" id="accordionPracticas">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingPracticas">
+                                                    <div class="d-flex justify-content-center w-100">
+                                                        <button
+                                                            class="accordion-button collapsed custom-accordion-button"
+                                                            type="button" data-toggle="collapse"
+                                                            data-target="#collapsePracticas" aria-expanded="false"
+                                                            aria-controls="collapsePracticas">
+                                                            Ver detalles
+                                                        </button>
+                                                    </div>
+                                                </h2>
+                                                <div id="collapsePracticas" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingPracticas"
+                                                    data-parent="#accordionPracticas">
+                                                    <div class="accordion-body text-start custom-accordion-body">
+                                                        <p class="mb-2">Con el <strong>teórico aprobado</strong>,
+                                                            comenzamos las <strong>prácticas</strong>. Te damos
+                                                            todas las facilidades para que puedas dar las prácticas que
+                                                            quieras.</p>
+                                                        <p class="mb-2">Podemos comenzar desde el <strong>parking del
+                                                                ayuntamiento de Ojén</strong> y
+                                                            volver al mismo punto. No te tendrás que preocupar del
+                                                            horario del autobús
+                                                            ni depender de nadie para que te baje a Marbella.</p>
+                                                        <p class="mb-2">Si trabajas o estudias en
+                                                            <strong>Marbella</strong>, podemos comenzar allí
+                                                            después de tu jornada, para que aproveches al máximo tu
+                                                            tiempo.</p>
+                                                        <p class="mb-0">Si entre semana te resulta complicado, no te
+                                                            preocupes, damos
+                                                            clases todos los <strong>fines de semana</strong>. Te
+                                                            recogemos en <strong>Ojén</strong> y te volvemos a
+                                                            traer.</p>
+                                                        <p class="mb-0">¡Contamos con muchas opciones para adaptarnos a
+                                                            tu horario y
+                                                            necesidades! Solo tienes que escribirnos y lo organizamos.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a href="https://api.whatsapp.com/send?phone=34693573074" target="_blank"
+                                            class="btn btn-primary mt-4 radius-xl btn-hover-scale w-100">Más
+                                            Información</a>
                                     </div>
                                 </div>
                             </div>
@@ -373,6 +462,89 @@
                     </div>
                 </div>
 
+                <style>
+                    .custom-card {
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        background-color: #fff;
+                    }
+
+                    .custom-card:hover {
+                        transform: translateY(-8px);
+                        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+                    }
+
+                    .image-wrapper {
+                        overflow: hidden;
+                        border-top-left-radius: calc(0.5rem - 1px);
+                        border-top-right-radius: calc(0.5rem - 1px);
+                    }
+
+                    .img-hover-zoom {
+                        transition: transform 0.5s ease;
+                    }
+
+                    .custom-card:hover .img-hover-zoom {
+                        transform: scale(1.08);
+                    }
+
+                    .bg-primary-light {
+                        background-color: #e0f2f7 !important;
+                        /* Un tono más claro de tu color primario */
+                    }
+
+                    .text-dark {
+                        color: #343a40 !important;
+                    }
+
+                    /* Estilos para el acordeón moderno */
+                    .modern-accordion .accordion-item {
+                        border: none;
+                        margin-bottom: 0.5rem;
+                        background-color: transparent;
+                    }
+
+                    .modern-accordion .custom-accordion-button {
+                        background-color: #f8f9fa;
+                        color: #007bff;
+                        border-radius: 0.5rem;
+                        padding: 0.75rem 1.25rem;
+                        font-weight: bold;
+                        transition: background-color 0.3s ease, color 0.3s ease;
+                        border: 1px solid #dee2e6;
+                    }
+
+                    .modern-accordion .custom-accordion-button:hover {
+                        background-color: #e2e6ea;
+                        color: #0056b3;
+                    }
+
+                    .modern-accordion .custom-accordion-button:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+
+                    .modern-accordion .custom-accordion-body {
+                        padding: 1rem 1.5rem;
+                        line-height: 1.7;
+                        color: #555;
+                        background-color: #fdfdfd;
+                        border-left: 3px solid #007bff;
+                        margin-top: 0.5rem;
+                        border-radius: 0.25rem;
+                        text-align: justify;
+                    }
+
+                    /* Responsive adjustments */
+                    @media (max-width: 768px) {
+                        .col-lg-6 {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+                    }
+                </style>
+
+                <!-- =================== SECCIÓN: MÁS QUE UNA AUTOESCUELA =================== -->
                 <div class="section-area section-sp1 ovpr-dark bg-fix online-cours"
                     style="background-image:url(assets/images/background/bg1.jpg);">
                     <div class="container">
@@ -417,6 +589,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- =================== SECCIÓN DIFERENCIAL =================== -->
                 <div class="section-area section-sp2" id="diferencial">
                     <div class="container">
                         <div class="row">
@@ -515,6 +688,7 @@
                     </div>
                 </div>
 
+                <!-- =================== TESTIMONIOS =================== -->
                 <div class="section-area section-sp2 bg-fix ovbl-dark"
                     style="background-image:url(assets/images/background/bg1.jpg);">
                     <div class="container">
@@ -599,6 +773,7 @@
                 </style>
 
 
+                <!-- =================== PREGUNTAS FRECUENTES (FAQ) =================== -->
                 <div id="faqs-section" class="section-area section-sp1">
                     <div class="container">
                         <div class="row">
@@ -614,12 +789,12 @@
 
                                     <div class="panel ttr-panel">
                                         <div class="panel-heading" id="headingOne">
-                                            <h2 class="panel-title">
+                                            <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-target="#collapseOne"
                                                     aria-expanded="true" aria-controls="collapseOne" class="collapsed">
                                                     ¿Puedo preparar el teórico online desde Ojén?
                                                 </a>
-                                            </h2>
+                                            </h4>
                                         </div>
                                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                             data-parent="#accordion1">
@@ -633,12 +808,12 @@
 
                                     <div class="panel ttr-panel">
                                         <div class="panel-heading" id="headingTwo">
-                                            <h2 class="panel-title">
+                                            <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-target="#collapseTwo"
                                                     aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
                                                     ¿Me recogen en Ojén para las clases prácticas?
                                                 </a>
-                                            </h2>
+                                            </h4>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                             data-parent="#accordion1">
@@ -652,13 +827,13 @@
 
                                     <div class="panel ttr-panel">
                                         <div class="panel-heading" id="headingThree">
-                                            <h2 class="panel-title">
+                                            <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-target="#collapseThree"
                                                     aria-expanded="false" aria-controls="collapseThree"
                                                     class="collapsed">
                                                     ¿Qué permisos puedo obtener?
                                                 </a>
-                                            </h2>
+                                            </h4>
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                             data-parent="#accordion1">
@@ -673,13 +848,13 @@
 
                                     <div class="panel ttr-panel">
                                         <div class="panel-heading" id="headingFour">
-                                            <h2 class="panel-title">
+                                            <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-target="#collapseFour"
                                                     aria-expanded="false" aria-controls="collapseFour"
                                                     class="collapsed">
                                                     ¿Cuál es el precio de las clases?
                                                 </a>
-                                            </h2>
+                                            </h4>
                                         </div>
                                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                             data-parent="#accordion1">
@@ -695,13 +870,13 @@
 
                                     <div class="panel ttr-panel">
                                         <div class="panel-heading" id="headingFive">
-                                            <h2 class="panel-title">
+                                            <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-target="#collapseFive"
                                                     aria-expanded="false" aria-controls="collapseFive"
                                                     class="collapsed">
                                                     ¿Cuánto tiempo tardaré en sacarme el carnet?
                                                 </a>
-                                            </h2>
+                                            </h4>
                                         </div>
                                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                                             data-parent="#accordion1">
@@ -722,6 +897,8 @@
 
             </div>
         </div>
+
+        <!-- =================== FOOTER =================== -->
         <footer>
 
             <div class="footer-bottom">
@@ -734,11 +911,13 @@
                 </div>
             </div>
         </footer>
+        <!-- =================== BOTÓN WHATSAPP Y BACK TO TOP =================== -->
         <button class="back-to-top fa fa-chevron-up"></button>
         <a href="https://api.whatsapp.com/send?phone=34693573074" class="whatsapp-float" target="_blank">
             <i class="fa fa-whatsapp"></i>
         </a>
     </div>
+    <!-- =================== SCRIPTS JS =================== -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
@@ -853,5 +1032,7 @@
         });
     </script>
 </body>
+
+<!-- =================== FIN DOCUMENTO HTML =================== -->
 
 </html>
