@@ -1,8 +1,5 @@
-<!-- =================== INICIO DOCUMENTO HTML =================== -->
 <!DOCTYPE html>
 <html lang="es">
-
-<!-- =================== HEAD: Metadatos, estilos y scripts =================== -->
 
 <head>
     <meta charset="utf-8" />
@@ -15,101 +12,6 @@
     <meta
         content="Autoescuela Ojén: tu autoescuela en Ojén (Málaga). Prepara el teórico online, gestiona tu examen y empieza tus clases prácticas con recogida en tu casa. Permiso B (coche) y motos. ¡Infórmate y empieza hoy!"
         name="description" />
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "DrivingSchool",
-    "name": "Autoescuela Ojén",
-    "image": "https://autoescuelaojen.es/assets/images/autoescuela-ojen.jpg",
-    "@id": "https://autoescuelaojen.es/",
-    "url": "https://autoescuelaojen.es/",
-    "telephone": "+34 693 573 074",
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Calle Principal, Ojén",
-        "addressLocality": "Ojén",
-        "addressRegion": "Málaga",
-        "postalCode": "29610",
-        "addressCountry": "ES"
-    },
-    "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 36.5706,
-        "longitude": -4.8822
-    },
-    "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "opens": "9:00",
-        "closes": "20:30"
-    }],
-    "sameAs": [
-        
-        "https://www.instagram.com/autoescuelaalfa"
-    ]
-}
-</script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Puedo preparar el teórico online desde Ojén?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí. Ponemos a tu disposición una plataforma online con test y material actualizado de la DGT. Así podrás estudiar desde casa y a tu ritmo."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Me recogen en Ojén para las clases prácticas?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí. Ofrecemos recogida en tu domicilio en Ojén para que no tengas que desplazarte a Marbella. Queremos que tu aprendizaje sea cómodo y accesible."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Qué permisos puedo obtener?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "En nuestra autoescuela puedes obtener el permiso B (coche) y todos los permisos de moto: AM, A1, A2 y A. El carnet de coche es el más solicitado en Ojén, pero tenemos amplia experiencia en formación de motoristas."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuál es el precio de las clases?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Contamos con diferentes packs y bonos adaptados a cada alumno. El precio depende del permiso y del número de clases prácticas que necesites. Pídenos información y te haremos un presupuesto personalizado sin compromiso."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuánto tiempo tardaré en sacarme el carnet?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Depende de tu ritmo y disponibilidad. Con constancia, muchos alumnos aprueban el teórico en pocas semanas y completan las prácticas en un par de meses. Nuestro equipo te guiará paso a paso para que lo consigas lo antes posible."
-      }
-    }
-  ]
-}
-</script>
-    <meta content="Autoescuela Ojén | Carnet de Coche y Moto en Ojén, Málaga" property="og:title" />
-    <meta content="Tu autoescuela en Ojén. Obtén tu carnet de conducir de forma rápida y sencilla."
-        property="og:description" />
-    <meta content="assets/images/autoescuela-ojen.jpg" property="og:image" />
-    <meta content="telephone=no" name="format-detection" />
-    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <title>Autoescuela Ojén | Carnet de Coche y Moto en Ojén, Málaga </title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="assets/css/assets.css" rel="stylesheet" type="text/css" />
@@ -117,62 +19,85 @@
     <link href="assets/css/shortcodes/shortcodes.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link class="skin" href="assets/css/color/color-1.css" rel="stylesheet" type="text/css" />
-    <link href="assets/vendors/revolution/css/layers.css" rel="stylesheet" type="text/css" />
-    <link href="assets/vendors/revolution/css/settings.css" rel="stylesheet" type="text/css" />
-    <link href="assets/vendors/revolution/css/navigation.css" rel="stylesheet" type="text/css" />
     <style>
-        /* Ocultar flechas del Revolution Slider */
-        .rev_slider_wrapper .uranus.tparrows {
-            display: none !important;
-        }
+    /* Navbar siempre negra con margen */
+    .header,
+    .menu-bar,
+    .sticky-header {
+        background-color: #000 !important;
+        padding: 10px 0;
+    }
 
-        /* Estilos para el video de fondo */
-        .rev-video-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-            /* Asegúrate de que esté detrás del contenido */
-        }
+    /* Más espacio entre navbar y título */
+    .page-content {
+        padding-top: 160px; /* ajusta este valor según necesites */
+    }
 
-        .rev-video-background video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-        }
+    /* Igualar altura de columnas en la fila */
+    .row.m-0 {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
 
-        /* Estilos para el overlay y el contenido */
-        .tp-caption.tp-shape.tp-shapewrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 5;
-            background-color: rgba(2, 0, 11, 0.80);
-        }
-    </style>
-    </meta>
-    </meta>
+    /* Las columnas se estiran igual */
+    .row.m-0 > [class*="col-"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Bloques de servicio ocupan toda la altura de la columna */
+    .service-block {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        border: 2px solid #ddd; /* marco */
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        background: #fff;
+    }
+
+    .service-block h5 {
+        font-weight: bold;
+        color: #1E3A8A;
+        margin-bottom: 15px;
+    }
+
+    .service-block p {
+        line-height: 1.7;
+        color: #555;
+        text-align: justify;
+    }
+
+    /* Botón siempre abajo */
+    .service-block a.btn {
+        margin-top: auto;
+    }
+
+    /* Ajustes generales */
+    .services-section {
+        padding: 50px 0;
+    }
+
+    .services-section h1 {
+        text-align: center; /* centrado */
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #1E3A8A;
+        margin-bottom: 2rem;
+    }
+</style>
+
 </head>
 
-<!-- =================== INICIO BODY =================== -->
-
 <body id="bg">
-    <!-- =================== WRAPPER PRINCIPAL =================== -->
     <div class="page-wraper">
-        <div id="loading-icon-bx"></div>
-
-        <!-- =================== HEADER Y MENÚ PRINCIPAL =================== -->
         <header class="header rs-nav header-transparent">
             <div class="sticky-header navbar-expand-lg">
                 <div class="menu-bar clearfix">
@@ -199,761 +124,80 @@
                             </div>
                         </div>
                         <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
-                            <div class="menu-logo">
-                                <a href="index.html"><img alt="Logo Autoescuela Ojén"
-                                        src="assets/images/logo.png" /></a>
-                            </div>
                             <ul class="nav navbar-nav">
                                 <li><a href="#diferencial">Por qué elegirnos</a></li>
-                                <li class="active"><a
-                                        href="https://api.whatsapp.com/send?phone=34693573074">Contacto</a></li>
-                                <li><a href="https://matferline.com/alumno/index.php" target="_blank">Test Online</a>
-                                </li>
+                                <li class="active"><a href="https://api.whatsapp.com/send?phone=34693573074">Contacto</a></li>
+                                <li><a href="https://matferline.com/alumno/index.php" target="_blank">Test Online</a></li>
                                 <li><a href="https://sedeclave.dgt.gob.es/WEB_NOTP_CONSULTA/consultaNota.faces"
                                         target="_blank">Notas Examen</a></li>
                             </ul>
-                            <div class="nav-social-link">
-                                <a href="https://www.instagram.com/autoescuelaalfa" target="_blank"><i
-                                        class="fa fa-instagram"></i></a>
-                                <a href="https://share.google/tQ9X2rXULFIEXZGDZ" target="_blank"><i
-                                        class="fa fa-google"></i></a> <a class="custom-0"
-                                    href="https://api.whatsapp.com/send?phone=34693573074" target="_blank"><i
-                                        class="fa fa-whatsapp"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- =================== CONTENIDO PRINCIPAL =================== -->
+
         <div class="page-content bg-white">
-            <!-- =================== SLIDER PRINCIPAL =================== -->
-            <div class="rev-slider">
-                <div class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery36"
-                    data-source="gallery" id="rev_slider_486_1_wrapper"
-                    style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
-                    <div class="rev_slider fullwidthabanner" data-version="5.3.0.2" id="rev_slider_486_1"
-                        style="display:none;">
-                        <ul>
-                            <li data-description="La mejor autoescuela para el carnet de coche y moto en Ojén."
-                                data-easein="default" data-easeout="default" data-fsmasterspeed="1500"
-                                data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0"
-                                data-hideslideonmobile="off" data-index="rs-100" data-masterspeed="default"
-                                data-param1="" data-param10="" data-param2="" data-param3="" data-param4=""
-                                data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
-                                data-rotate="0" data-saveperformance="off" data-slotamount="default"
-                                data-thumb="error-404.html" data-title="AUTOESCUELA OJÉN"
-                                data-transition="parallaxvertical">
-
-                                <div class="rev-video-background">
-                                    <video autoplay muted loop playsinline>
-                                        <source src="assets/images/slider/slide1.mp4" type="video/mp4">
-                                        Tu navegador no soporta el tag de video.
-                                    </video>
-                                </div>
-
-                                <div class="tp-caption tp-shape tp-shapewrapper" data-basealign="slide"
-                                    data-frames='[{"from":"opacity:0;","speed":1,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1,"to":"opacity:0;","ease":"Power4.easeOut"}]'
-                                    data-height="full" data-hoffset="['0','0','0','0']" data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingtop="[0,0,0,0]" data-responsive="off" data-responsive_offset="off"
-                                    data-textalign="['left','left','left','left']" data-type="shape"
-                                    data-voffset="['0','0','0','0']" data-whitespace="nowrap" data-width="full"
-                                    data-x="['center','center','center','center']"
-                                    data-y="['middle','middle','middle','middle']" id="slide-100-layer-1"
-                                    style="z-index: 5;background-color:rgba(2, 0, 11, 0.80);border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                                </div>
-
-                                <div class="tp-caption Newspaper-Title tp-resizeme"
-                                    data-fontsize="['50','50','50','30']"
-                                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                    data-height="none" data-hoffset="['0','0','0','0']"
-                                    data-lineheight="['55','55','55','35']" data-paddingbottom="[10,10,10,10]"
-                                    data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
-                                    data-textalign="['center','center','center','center']" data-type="text"
-                                    data-voffset="['250','250','250','240']" data-whitespace="normal" data-width="full"
-                                    data-x="['center','center','center','center']" data-y="['top','top','top','top']"
-                                    id="slide-100-layer-2"
-                                    style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;">
-                                    Tu Autoescuela en Ojén
-                                </div>
-
-                                <div class="tp-caption Newspaper-Subtitle tp-resizeme"
-                                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                    data-height="none" data-hoffset="['0','0','0','0']" data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
-                                    data-textalign="['left','left','left','left']" data-type="text"
-                                    data-voffset="['210','210','210','210']" data-whitespace="nowrap" data-width="none"
-                                    data-x="['center','center','center','center']" data-y="['top','top','top','top']"
-                                    id="slide-100-layer-3"
-                                    style="z-index: 7; white-space: nowrap; color:#fff; font-family:rubik; font-size:18px; font-weight:400;">
-                                    Clases prácticas con recogida en tu domicilio.
-                                </div>
-
-                                <div class="tp-caption Newspaper-Subtitle tp-resizeme"
-                                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                    data-height="['120','120','120','140']" data-hoffset="['0','0','0','0']"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]"
-                                    data-responsive_offset="on" data-textalign="['center','center','center','center']"
-                                    data-type="text" data-voffset="['320','320','320','290']" data-whitespace="unset"
-                                    data-width="['800','800','700','420']"
-                                    data-x="['center','center','center','center']" data-y="['top','top','top','top']"
-                                    id="slide-100-layer-4"
-                                    style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-                                    Ofrecemos permisos de conducir de coche y moto.</br> Prepara el
-                                    teórico de manera online </br>y te recogemos para tus clases
-                                    prácticas sin que tengas que bajar a Marbella.
-                                </div>
-
-                                <div class="tp-caption Newspaper-Button rev-btn"
-                                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
-                                    data-height="none" data-hoffset="['0','0','0','0']"
-                                    data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]"
-                                    data-paddingright="[30,35,35,15]" data-paddingtop="[12,12,12,12]"
-                                    data-responsive="off" data-responsive_offset="on"
-                                    data-textalign="['center','center','center','center']" data-type="button"
-                                    data-voffset="['450','450','450','470']" data-whitespace="nowrap" data-width="none"
-                                    data-x="['center','center','center','center']" data-y="['top','top','top','top']"
-                                    id="slide-100-layer-6"
-                                    style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px; background-color: #F7B205;">
-                                    <a class="custom-1" style="color: #ffffff;"
-                                        href="https://api.whatsapp.com/send?phone=34693573074">CONTACTO</a>
-                                </div>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- =================== BLOQUE DE CONTENIDO =================== -->
-            <div class="content-block">
-                <!-- =================== SERVICIOS PRINCIPALES =================== -->
-                <div class="section-area content-inner service-info-bx">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                <div class="card shadow-lg h-100 border-0 rounded-4 overflow-hidden custom-card">
-                    <div class="image-wrapper">
-                        <img src="assets/images/our-services/casa.jpg"
-                             class="card-img-top img-fluid img-hover-zoom" alt="Clases teóricas online">
-                    </div>
-                    <div class="card-body text-center d-flex flex-column">
-                        <div class="feature-box-sm radius bg-primary-light mb-3 d-inline-flex align-items-center justify-content-center mx-auto"
-                             style="width:60px; height:60px; border-radius: 50%;">
-                            <i class="fa fa-book text-primary fa-2x"></i>
+            <div class="section-area services-section">
+                <div class="container-fluid p-0">
+                    <div class="row m-0">
+                        <div class="col-12 p-0 text-center">
+                            
+                            <h1 class="my-4 text-center">Autoescuela Ojén</h1>
+                            
                         </div>
-                        <h5 class="card-title fw-bold text-dark mb-3">1º Aprueba el teórico</h5>
-
-                        <div class="accordion-body text-start custom-accordion-body">
-                            <p class="mb-2">Para preparar el <strong>examen teórico</strong> contamos con una <strong>plataforma web</strong>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-lg-6 col-md-6 col-sm-12 service-block px-3">
+                            <h5 class="fw-bold">1º Aprueba el teórico</h5>
+                            <p>Para preparar el <strong>examen teórico</strong> contamos con una <strong>plataforma web</strong>
                                 a la que podrás acceder las 24 horas del día. En ella encontrarás todo el
                                 temario explicado de la manera más sencilla y completa.</p>
-                            <p class="mb-2">Podrás estudiar y hacer los <strong>test de examen</strong> con las mismas
+                            <p>Podrás estudiar y hacer los <strong>test de examen</strong> con las mismas
                                 preguntas que pueden caer desde tu móvil, ordenador o tablet.</p>
-                            <p class="mb-0">Tendrás a dos <strong>profesores titulados</strong> con amplísima experiencia y
+                            <p>Tendrás a dos <strong>profesores titulados</strong> con amplísima experiencia y
                                 grandes resultados para resolver cualquier duda: podrás contactar a través
                                 de llamada o WhatsApp, en todo momento.</p>
-                            <p class="mb-0">Una vez te sientas preparado para realizar el examen, te
+                            <p>Una vez te sientas preparado para realizar el examen, te
                                 solicitamos fecha y hora para que lo realices en las <strong>instalaciones de
                                 Marbella</strong>.</p>
+                                <p><b>¡Empieza hoy mismo y da tu primer paso hacia el carnet de conducir!</b></p>
+                            <a href="https://matferline.com/acceso/index.php" target="_blank"
+                                class="btn btn-primary radius-xl w-100">Acceder a Tests</a>
                         </div>
-                        <a href="https://matferline.com/acceso/index.php" target="_blank"
-                           class="btn btn-primary mt-4 radius-xl btn-hover-scale w-100 mt-auto">Acceder a Tests</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                <div class="card shadow-lg h-100 border-0 rounded-4 overflow-hidden custom-card">
-                    <div class="image-wrapper">
-                        <img src="assets/images/our-services/coche.jpg"
-                             class="card-img-top img-fluid img-hover-zoom" alt="Clases prácticas de coche">
-                    </div>
-                    <div class="card-body text-center d-flex flex-column">
-                        <div class="feature-box-sm radius bg-primary-light mb-3 d-inline-flex align-items-center justify-content-center mx-auto"
-                             style="width:60px; height:60px; border-radius: 50%;">
-                            <i class="fa fa-car text-primary fa-2x"></i>
-                        </div>
-                        <h5 class="card-title fw-bold text-dark mb-3">2º Comienza las prácticas</h5>
-
-                        <div class="accordion-body text-start custom-accordion-body">
-                            <p class="mb-2">Con el <strong>teórico aprobado</strong>, comenzamos las <strong>prácticas</strong>. Te damos
+                        <div class="col-lg-6 col-md-6 col-sm-12 service-block px-3">
+                            <h5 class="fw-bold">2º Comienza las prácticas</h5>
+                            <p>Con el <strong>teórico aprobado</strong>, comenzamos las <strong>prácticas</strong>. Te damos
                                 todas las facilidades para que puedas dar las prácticas que quieras.</p>
-                            <p class="mb-2">Podemos comenzar desde el <strong>parking del ayuntamiento de Ojén</strong> y
+                            <p>Podemos comenzar desde el <strong>parking del ayuntamiento de Ojén</strong> y
                                 volver al mismo punto. No te tendrás que preocupar del horario del autobús
                                 ni depender de nadie para que te baje a Marbella.</p>
-                            <p class="mb-2">Si trabajas o estudias en <strong>Marbella</strong>, podemos comenzar allí
+                            <p>Si trabajas o estudias en <strong>Marbella</strong>, podemos comenzar allí
                                 después de tu jornada, para que aproveches al máximo tu tiempo.</p>
-                            <p class="mb-0">Si entre semana te resulta complicado, no te preocupes, damos
+                            <p>Si entre semana te resulta complicado, no te preocupes, damos
                                 clases todos los <strong>fines de semana</strong>. Te recogemos en <strong>Ojén</strong> y te volvemos a
                                 traer.</p>
-                            <p class="mb-0">¡Contamos con muchas opciones para adaptarnos a tu horario y
+                            <p>¡Contamos con muchas opciones para adaptarnos a tu horario y
                                 necesidades! Solo tienes que escribirnos y lo organizamos.</p>
+                            <a href="https://api.whatsapp.com/send?phone=34693573074" target="_blank"
+                                class="btn btn-primary radius-xl w-100">Más Información</a>
                         </div>
-
-                        <a href="https://api.whatsapp.com/send?phone=34693573074" target="_blank"
-                           class="btn btn-primary mt-4 radius-xl btn-hover-scale w-100 mt-auto">Más Información</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
-<style>
-    .custom-card {
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background-color: #fff;
-    }
-
-    .custom-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    }
-
-    .image-wrapper {
-        overflow: hidden;
-        border-top-left-radius: calc(0.5rem - 1px);
-        border-top-right-radius: calc(0.5rem - 1px);
-    }
-
-    .img-hover-zoom {
-        transition: transform 0.5s ease;
-    }
-
-    .custom-card:hover .img-hover-zoom {
-        transform: scale(1.08);
-    }
-
-    .bg-primary-light {
-        background-color: #e0f2f7 !important;
-    }
-
-    .text-dark {
-        color: #343a40 !important;
-    }
-
-    /* Estilos para el texto */
-    .accordion-body.custom-accordion-body {
-        padding: 1rem 1.5rem;
-        line-height: 1.7;
-        color: #555;
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
-        margin-top: 0;
-        border-radius: 0.25rem;
-        text-align: justify;
-    }
-    
-    .accordion-body.custom-accordion-body p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* Ajustes responsivos */
-    @media (max-width: 768px) {
-        .col-lg-6 {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-    }
-</style>
-
-                <!-- =================== SECCIÓN: MÁS QUE UNA AUTOESCUELA =================== -->
-                <div class="section-area section-sp1 ovpr-dark bg-fix online-cours"
-                    style="background-image:url(assets/images/background/bg1.jpg);">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center text-white">
-                                <h2>Más que una Autoescuela</h2>
-                                <h5>Ofrecemos un servicio integral y adaptado a ti.</h5>
-                                <div class="cours-search">
-                                    <a href="https://api.whatsapp.com/send?phone=34693573074"
-                                        class="btn button-md">¡Contacta ya!</a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mw800 m-auto">
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="cours-search-bx m-b30">
-                                        <div class="icon-box">
-                                            <h3><i class="ti-user"></i><span class="counter">100</span>%</h3>
-                                        </div>
-                                        <span class="cours-search-text">Alumnos satisfechos</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="cours-search-bx m-b30">
-                                        <div class="icon-box">
-                                            <h3><i class="ti-book"></i><span class="counter">100</span>%</h3>
-                                        </div>
-                                        <span class="cours-search-text">Preparación online</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="cours-search-bx m-b30">
-                                        <div class="icon-box">
-                                            <h3><i class="ti-car"></i><span class="counter">10</span>min</h3>
-                                        </div>
-                                        <span class="cours-search-text">A 10 min de Marbella</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- =================== SECCIÓN DIFERENCIAL =================== -->
-                <div class="section-area section-sp2" id="diferencial">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center heading-bx">
-                                <h2 class="title-head m-b0">Nuestro Servicio <span>Diferencial</span></h2>
-                                <p class="m-b0">Elige la comodidad y cercanía que te ofrece la única autoescuela en el
-                                    pueblo de Ojén.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div
-                                class="upcoming-event-carousel owl-carousel owl-btn-center-lr owl-btn-1 col-12 p-lr0 m-b30">
-                                <div class="item">
-                                    <div class="event-bx">
-                                        <div class="action-box">
-                                            <img alt="Mapa de Ojén y Marbella" src="assets/images/event/pic4.jpg" />
-                                        </div>
-                                        <div class="info-bx d-flex">
-                                            <div>
-                                                <div class="event-time">
-                                                    <div class="event-date">🏠</div>
-                                                    <div class="event-month">Recogida</div>
-                                                </div>
-                                            </div>
-                                            <div class="event-info">
-                                                <h4 class="event-title"><a
-                                                        href="https://api.whatsapp.com/send?phone=34693573074"
-                                                        target="_blank">Clases prácticas a domicilio</a>
-                                                </h4>
-                                                <ul class="media-post">
-                                                    <li><a href="#"><i class="fa fa-map-marker"></i> Pueblo de Ojén</a>
-                                                    </li>
-                                                </ul>
-                                                <p>No tienes que preocuparte de bajar a Marbella, nosotros te recogemos
-                                                    en tu casa en Ojén para cada clase práctica.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="event-bx">
-                                        <div class="action-box">
-                                            <img alt="Alumna estudiando con tablet"
-                                                src="assets/images/event/pic3.jpg" />
-                                        </div>
-                                        <div class="info-bx d-flex">
-                                            <div>
-                                                <div class="event-time">
-                                                    <div class="event-date">🖥️</div>
-                                                    <div class="event-month">Teoría</div>
-                                                </div>
-                                            </div>
-                                            <div class="event-info">
-                                                <h4 class="event-title"><a
-                                                        href="https://api.whatsapp.com/send?phone=34693573074"
-                                                        target="_blank">Prepara el teórico online</a></h4>
-                                                <ul class="media-post">
-                                                    <li><a href="#"><i class="fa fa-clock-o"></i> A tu ritmo</a></li>
-                                                </ul>
-                                                <p>Te facilitamos el acceso a la mejor plataforma de tests online para
-                                                    que puedas estudiar el teórico desde cualquier lugar y en cualquier
-                                                    momento.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="event-bx">
-                                        <div class="action-box">
-                                            <img alt="Profesor de autoescuela con alumno"
-                                                src="assets/images/event/pic2.jpg" />
-                                        </div>
-                                        <div class="info-bx d-flex">
-                                            <div>
-                                                <div class="event-time">
-                                                    <div class="event-date">👨‍🏫</div>
-                                                    <div class="event-month">Equipo</div>
-                                                </div>
-                                            </div>
-                                            <div class="event-info">
-                                                <h4 class="event-title"><a
-                                                        href="https://api.whatsapp.com/send?phone=34693573074"
-                                                        target="_blank">Profesionales a tu servicio</a></h4>
-                                                <ul class="media-post">
-                                                    <li><a href="#"><i class="fa fa-star"></i> Valoraciones
-                                                            excelentes</a></li>
-                                                </ul>
-                                                <p>Contamos con instructores experimentados y amables que te guiarán en
-                                                    cada paso para que ganes confianza al volante.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- =================== TESTIMONIOS =================== -->
-                <div class="section-area section-sp2 bg-fix ovbl-dark"
-                    style="background-image:url(assets/images/background/bg1.jpg);">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-white heading-bx left">
-                                <h2 class="title-head text-uppercase">Lo que opinan nuestros <span>alumnos</span></h2>
-                                <p>Opiniones reales de alumnos que ya han conseguido su carnet con Autoescuela Alfa.</p>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
-
-                            <div class="item">
-                                <div class="testimonial-bx">
-                                    <div class="testimonial-header d-flex align-items-center gap-2">
-                                        <h5 class="name mb-0">
-                                            María García
-                                        </h5>
-                                        <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg"
-                                            alt="Google" class="google-icon">
-                                    </div>
-                                    <p class="testimonial-meta mb-2">- Alumna Permiso B | <span
-                                            class="date">2025-08-15</span></p>
-                                    <span class="stars">⭐⭐⭐⭐⭐</span>
-                                    <div class="testimonial-content mt-2">
-                                        <p>
-                                            La mejor decisión que he tomado. Me recogieron en casa en Ojén y los
-                                            profesores fueron muy pacientes.
-                                            Recomendado al 100%.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonial-bx">
-                                    <div class="testimonial-header d-flex align-items-center gap-2">
-                                        <h5 class="name mb-0">
-                                            Jorge Pérez
-                                        </h5>
-                                        <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg"
-                                            alt="Google" class="google-icon">
-                                    </div>
-                                    <p class="testimonial-meta mb-2">- Alumno Permiso A2 | <span
-                                            class="date">2025-07-28</span></p>
-                                    <span class="stars">⭐⭐⭐⭐⭐</span>
-                                    <div class="testimonial-content mt-2">
-                                        <p>
-                                            Pude hacer la teoría online y las prácticas fueron muy eficientes. Ahora
-                                            disfruto de mi moto por Ojén y Marbella ¡Gracias Jesús!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <style>
-                    .google-icon {
-                        width: 18px;
-                        height: 18px;
-                        object-fit: contain;
-                    }
-
-                    .testimonial-header {
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
-                    }
-
-                    .testimonial-meta {
-                        font-size: 0.9rem;
-                        color: #ccc;
-                    }
-
-                    .stars {
-                        color: #FFD700;
-                        font-size: 1rem;
-                    }
-                </style>
-
-
-                <!-- =================== PREGUNTAS FRECUENTES (FAQ) =================== -->
-                <div id="faqs-section" class="section-area section-sp1">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12">
-                                <div class="heading-bx left">
-                                    <h2 class="m-b10 title-head">Preguntas <span>Frecuentes</span></h2>
-                                    <p>Resolvemos las dudas más comunes sobre nuestros cursos de coche y moto en
-                                        Ojén.</br></br>
-                                        Si necesitas más información, ¡contáctanos sin compromiso!</p>
-                                </div>
-
-                                <div class="ttr-accordion m-b30 faq-bx" id="accordion1">
-
-                                    <div class="panel ttr-panel">
-                                        <div class="panel-heading" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-target="#collapseOne"
-                                                    aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-                                                    ¿Puedo preparar el teórico online desde Ojén?
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                            data-parent="#accordion1">
-                                            <div class="panel-body">
-                                                <p>Sí. Ponemos a tu disposición una plataforma online con test y
-                                                    material actualizado de la DGT.
-                                                    Así podrás estudiar desde casa y a tu ritmo.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel ttr-panel">
-                                        <div class="panel-heading" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-target="#collapseTwo"
-                                                    aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
-                                                    ¿Me recogen en Ojén para las clases prácticas?
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                            data-parent="#accordion1">
-                                            <div class="panel-body">
-                                                <p>Sí. Ofrecemos recogida en tu domicilio en Ojén para que no tengas que
-                                                    desplazarte a Marbella.
-                                                    Queremos que tu aprendizaje sea cómodo y accesible.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel ttr-panel">
-                                        <div class="panel-heading" id="headingThree">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-target="#collapseThree"
-                                                    aria-expanded="false" aria-controls="collapseThree"
-                                                    class="collapsed">
-                                                    ¿Qué permisos puedo obtener?
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                            data-parent="#accordion1">
-                                            <div class="panel-body">
-                                                <p>En nuestra autoescuela puedes obtener el permiso B (coche) y todos
-                                                    los permisos de moto: AM, A1, A2 y A.
-                                                    El carnet de coche es el más solicitado en Ojén, pero tenemos amplia
-                                                    experiencia en formación de motoristas.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel ttr-panel">
-                                        <div class="panel-heading" id="headingFour">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-target="#collapseFour"
-                                                    aria-expanded="false" aria-controls="collapseFour"
-                                                    class="collapsed">
-                                                    ¿Cuál es el precio de las clases?
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                            data-parent="#accordion1">
-                                            <div class="panel-body">
-                                                <p>Contamos con diferentes packs y bonos adaptados a cada alumno.
-                                                    El precio depende del permiso y del número de clases prácticas que
-                                                    necesites.
-                                                    Pídenos información y te haremos un presupuesto personalizado sin
-                                                    compromiso.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="panel ttr-panel">
-                                        <div class="panel-heading" id="headingFive">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-target="#collapseFive"
-                                                    aria-expanded="false" aria-controls="collapseFive"
-                                                    class="collapsed">
-                                                    ¿Cuánto tiempo tardaré en sacarme el carnet?
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                            data-parent="#accordion1">
-                                            <div class="panel-body">
-                                                <p>Depende de tu ritmo y disponibilidad. Con constancia, muchos alumnos
-                                                    aprueban el teórico en pocas semanas
-                                                    y completan las prácticas en un par de meses. Nuestro equipo te
-                                                    guiará paso a paso para que lo consigas lo antes posible.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- =================== FOOTER =================== -->
         <footer>
-
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                             <p>© 2025 Autoescuela Ojén. Todos los derechos reservados.</p>
-                            <a href="https://xn--diseowebcordoba-1qb.es/" style="font-size: x-small;">By: Juan José
-                                Jurado</a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- =================== BOTÓN WHATSAPP Y BACK TO TOP =================== -->
-        <button class="back-to-top fa fa-chevron-up"></button>
-        <a href="https://api.whatsapp.com/send?phone=34693573074" class="whatsapp-float" target="_blank">
-            <i class="fa fa-whatsapp"></i>
-        </a>
     </div>
-    <!-- =================== SCRIPTS JS =================== -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-    <script src="assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-    <script src="assets/vendors/magnific-popup/magnific-popup.js"></script>
-    <script src="assets/vendors/counter/waypoints-min.js"></script>
-    <script src="assets/vendors/counter/counterup.min.js"></script>
-    <script src="assets/vendors/imagesloaded/imagesloaded.js"></script>
-    <script src="assets/vendors/masonry/masonry.js"></script>
-    <script src="assets/vendors/masonry/filter.js"></script>
-    <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/contact.js"></script>
-    <script src="assets/vendors/switcher/switcher.js"></script>
-    <script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script>
-        jQuery(document).ready(function () {
-            var ttrevapi;
-            var tpj = jQuery;
-            if (tpj("#rev_slider_486_1").revolution == undefined) {
-                revslider_showDoubleJqueryError("#rev_slider_486_1");
-            } else {
-                ttrevapi = tpj("#rev_slider_486_1").show().revolution({
-                    sliderType: "standard",
-                    jsFileLocation: "assets/vendors/revolution/js/",
-                    sliderLayout: "fullwidth",
-                    dottedOverlay: "none",
-                    delay: 9000,
-                    navigation: {
-                        keyboardNavigation: "on",
-                        keyboard_direction: "horizontal",
-                        mouseScrollNavigation: "off",
-                        mouseScrollReverse: "default",
-                        onHoverStop: "on",
-                        touch: {
-                            touchenabled: "on",
-                            swipe_threshold: 75,
-                            swipe_min_touches: 1,
-                            swipe_direction: "horizontal",
-                            drag_block_vertical: false
-                        }
-                        ,
-                        arrows: {
-                            style: "uranus",
-                            enable: true,
-                            hide_onmobile: false,
-                            hide_onleave: false,
-                            tmp: '',
-                            left: {
-                                h_align: "left",
-                                v_align: "center",
-                                h_offset: 10,
-                                v_offset: 0
-                            },
-                            right: {
-                                h_align: "right",
-                                v_align: "center",
-                                h_offset: 10,
-                                v_offset: 0
-                            }
-                        },
-
-                    },
-                    viewPort: {
-                        enable: true,
-                        outof: "pause",
-                        visible_area: "80%",
-                        presize: false
-                    },
-                    responsiveLevels: [1240, 1024, 778, 480],
-                    visibilityLevels: [1240, 1024, 778, 480],
-                    gridwidth: [1240, 1024, 778, 480],
-                    gridheight: [768, 600, 600, 600],
-                    lazyType: "none",
-                    parallax: {
-                        type: "scroll",
-                        origo: "enterpoint",
-                        speed: 400,
-                        levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 46, 47, 48, 49, 50, 55],
-                        type: "scroll",
-                    },
-                    shadow: 0,
-                    spinner: "off",
-                    stopLoop: "off",
-                    stopAfterLoops: -1,
-                    stopAtSlide: -1,
-                    shuffle: "off",
-                    autoHeight: "off",
-                    hideThumbsOnMobile: "off",
-                    hideSliderAtLimit: 0,
-                    hideCaptionAtLimit: 0,
-                    hideAllCaptionAtLilmit: 0,
-                    debugMode: false,
-                    fallbacks: {
-                        simplifyAll: "off",
-                        nextSlideOnWindowFocus: "off",
-                        disableFocusListener: false,
-                    }
-                });
-            }
-        });
-    </script>
 </body>
-
-<!-- =================== FIN DOCUMENTO HTML =================== -->
-
 </html>
