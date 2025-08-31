@@ -13,8 +13,7 @@
     <meta
         content="Autoescuela Ojén: tu autoescuela en Ojén (Málaga). Prepara el teórico online, gestiona tu examen y empieza tus clases prácticas con recogida en tu casa. Permiso B (coche) y motos. ¡Infórmate y empieza hoy!"
         name="description" />
-    <!-- Schema.org LocalBusiness -->
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "DrivingSchool",
@@ -54,8 +53,7 @@
     ]
 }
 </script>
-<!-- Schema.org FAQ -->
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -119,13 +117,47 @@
     <link class="skin" href="assets/css/color/color-1.css" rel="stylesheet" type="text/css" />
     <link href="assets/vendors/revolution/css/layers.css" rel="stylesheet" type="text/css" />
     <link href="assets/vendors/revolution/css/settings.css" rel="stylesheet" type="text/css" />
-        <link href="assets/vendors/revolution/css/navigation.css" rel="stylesheet" type="text/css" />
-        <style>
-            /* Ocultar flechas del Revolution Slider */
-            .rev_slider_wrapper .uranus.tparrows {
-                display: none !important;
-            }
-        </style>
+    <link href="assets/vendors/revolution/css/navigation.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* Ocultar flechas del Revolution Slider */
+        .rev_slider_wrapper .uranus.tparrows {
+            display: none !important;
+        }
+
+        /* Estilos para el video de fondo */
+        .rev-video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1; /* Asegúrate de que esté detrás del contenido */
+        }
+
+        .rev-video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        /* Estilos para el overlay y el contenido */
+        .tp-caption.tp-shape.tp-shapewrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            background-color:rgba(2, 0, 11, 0.80);
+        }
+    </style>
     </meta>
     </meta>
 </head>
@@ -176,9 +208,9 @@
                                 <a href="https://www.instagram.com/autoescuelaalfa" target="_blank"><i
                                         class="fa fa-instagram"></i></a>
                                 <a href="https://share.google/tQ9X2rXULFIEXZGDZ" target="_blank"><i
-                                        class="fa fa-google"></i></a> <!-- O quizás fab fa-google -->
-                                <a class="custom-0" href="https://api.whatsapp.com/send?phone=34693573074"
-                                    target="_blank"><i class="fa fa-whatsapp"></i></a>
+                                        class="fa fa-google"></i></a> <a class="custom-0"
+                                    href="https://api.whatsapp.com/send?phone=34693573074" target="_blank"><i
+                                        class="fa fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -202,9 +234,14 @@
                                 data-rotate="0" data-saveperformance="off" data-slotamount="default"
                                 data-thumb="error-404.html" data-title="AUTOESCUELA OJÉN"
                                 data-transition="parallaxvertical">
-                                <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
-                                    data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                                    src="assets/images/slider/slide1.jpg">
+                                
+                                <div class="rev-video-background">
+                                    <video autoplay muted loop playsinline>
+                                        <source src="assets/images/slider/slide1.mp4" type="video/mp4">
+                                        Tu navegador no soporta el tag de video.
+                                    </video>
+                                </div>
+                                
                                 <div class="tp-caption tp-shape tp-shapewrapper" data-basealign="slide"
                                     data-frames='[{"from":"opacity:0;","speed":1,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1,"to":"opacity:0;","ease":"Power4.easeOut"}]'
                                     data-height="full" data-hoffset="['0','0','0','0']" data-paddingbottom="[0,0,0,0]"
@@ -216,6 +253,7 @@
                                     data-y="['middle','middle','middle','middle']" id="slide-100-layer-1"
                                     style="z-index: 5;background-color:rgba(2, 0, 11, 0.80);border-color:rgba(0, 0, 0, 0);border-width:0px;">
                                 </div>
+
                                 <div class="tp-caption Newspaper-Title tp-resizeme"
                                     data-fontsize="['50','50','50','30']"
                                     data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
@@ -230,6 +268,7 @@
                                     style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;">
                                     Tu Autoescuela en Ojén
                                 </div>
+
                                 <div class="tp-caption Newspaper-Subtitle tp-resizeme"
                                     data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                                     data-height="none" data-hoffset="['0','0','0','0']" data-paddingbottom="[0,0,0,0]"
@@ -242,6 +281,7 @@
                                     style="z-index: 7; white-space: nowrap; color:#fff; font-family:rubik; font-size:18px; font-weight:400;">
                                     Clases prácticas con recogida en tu domicilio.
                                 </div>
+
                                 <div class="tp-caption Newspaper-Subtitle tp-resizeme"
                                     data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                                     data-height="['100','100','100','120']" data-hoffset="['0','0','0','0']"
@@ -253,42 +293,27 @@
                                     data-x="['center','center','center','center']" data-y="['top','top','top','top']"
                                     id="slide-100-layer-4"
                                     style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-                                    Ofrecemos permisos de conducir de coche y moto. Prepara el
-                                    teórico de manera online y te recogemos para tus clases
+                                    Ofrecemos permisos de conducir de coche y moto.</br> Prepara el
+                                    teórico de manera online </br>y te recogemos para tus clases
                                     prácticas sin que tengas que bajar a Marbella.
                                 </div>
+
                                 <div class="tp-caption Newspaper-Button rev-btn"
-                                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
-                                    data-height="none" data-hoffset="['90','80','75','90']"
-                                    data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]"
-                                    data-paddingright="[30,35,35,15]" data-paddingtop="[12,12,12,12]"
-                                    data-responsive="off" data-responsive_offset="on"
-                                    data-textalign="['center','center','center','center']" data-type="button"
-                                    data-voffset="['400','400','400','420']" data-whitespace="nowrap" data-width="none"
-                                    data-x="['center','center','center','center']" data-y="['top','top','top','top']"
-                                    id="slide-100-layer-5"
-                                    style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">
-                                    <a class="custom-1" href="https://api.whatsapp.com/send?phone=34693573074">MÁS
-                                        INFORMACIÓN</a>
-                                </div>
-                                <div class="tp-caption Newspaper-Button rev-btn"
-                                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
-                                    data-height="none" data-hoffset="['-90','-80','-75','-90']"
-                                    data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]"
-                                    data-paddingright="[30,35,35,15]" data-paddingtop="[12,12,12,12]"
-                                    data-responsive="off" data-responsive_offset="on"
-                                    data-textalign="['center','center','center','center']" data-type="button"
-                                    data-voffset="['400','400','400','420']" data-whitespace="nowrap" data-width="none"
-                                    data-x="['center','center','center','center']" data-y="['top','top','top','top']"
-                                    id="slide-100-layer-6"
-                                    style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">
-                                    <a class="custom-1"
-                                        href="https://api.whatsapp.com/send?phone=34693573074">CONTACTO</a>
-                                </div>
-                                </img>
+    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
+    data-height="none" data-hoffset="['0','0','0','0']"
+    data-paddingbottom="[12,12,12,12]" data-paddingleft="[30,35,35,15]"
+    data-paddingright="[30,35,35,15]" data-paddingtop="[12,12,12,12]"
+    data-responsive="off" data-responsive_offset="on"
+    data-textalign="['center','center','center','center']" data-type="button"
+    data-voffset="['400','400','400','420']" data-whitespace="nowrap" data-width="none"
+    data-x="['center','center','center','center']" data-y="['top','top','top','top']"
+    id="slide-100-layer-6"
+    style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px; background-color: #F7B205;">
+    <a class="custom-1" style="color: #ffffff;"
+        href="https://api.whatsapp.com/send?phone=34693573074">CONTACTO</a>
+</div>
+
                             </li>
-
-
                         </ul>
                     </div>
                 </div>
@@ -300,7 +325,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="service-bx">
                                     <div class="action-box">
-                                        <img alt="Coche en la autoescuela" src="assets/images/our-services/pic1.jpg" />
+                                        <img alt="Coche en la autoescuela" src="assets/images/our-services/coche.jpg" />
                                     </div>
                                     <div class="info-bx text-center">
                                         <div class="feature-box-sm radius bg-white">
@@ -315,7 +340,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="service-bx">
                                     <div class="action-box">
-                                        <img alt="Moto en la autoescuela" src="assets/images/our-services/pic2.jpg" />
+                                        <img alt="Moto en la autoescuela" src="assets/images/our-services/moto.jpeg" />
                                     </div>
                                     <div class="info-bx text-center">
                                         <div class="feature-box-sm radius bg-white">
@@ -330,7 +355,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <div class="service-bx m-b0">
                                     <div class="action-box">
-                                        <img alt="Clases teóricas online" src="assets/images/our-services/pic3.jpg" />
+                                        <img alt="Clases teóricas online" src="assets/images/our-services/casa.jpg" />
                                     </div>
                                     <div class="info-bx text-center">
                                         <div class="feature-box-sm radius bg-white">
@@ -346,63 +371,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-area section-sp2 popular-courses-bx">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 heading-bx left">
-                                <h2 class="title-head">Permisos que puedes obtener en <span>Autoescuela Ojén</span></h2>
-                                <p>Prepara tu carnet de coche (B) o moto (AM, A1, A2, A) sin salir de Ojén. ¡El permiso
-                                    B es el más demandado en el pueblo!</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0">
-                                <div class="item">
-                                    <div class="cours-bx">
-                                        <div class="action-box">
-                                            <img alt="Imagen de un profesor de autoescuela"
-                                                src="assets/images/courses/pic1.jpg" />
-                                            <a class="btn" href="https://api.whatsapp.com/send?phone=34693573074"
-                                                target="_blank">Leer Más</a>
-                                        </div>
-                                        <div class="info-bx text-center">
-                                            <h5>Profesores expertos</h5>
-                                            <span>Nuestro equipo te guiará en cada paso.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="cours-bx">
-                                        <div class="action-box">
-                                            <img alt="Imagen de un coche de autoescuela"
-                                                src="assets/images/courses/pic2.jpg" />
-                                            <a class="btn" href="https://api.whatsapp.com/send?phone=34693573074"
-                                                target="_blank">Leer Más</a>
-                                        </div>
-                                        <div class="info-bx text-center">
-                                            <h5>Prácticas a domicilio</h5>
-                                            <span>Te recogemos en tu casa en Ojén para cada clase.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="cours-bx">
-                                        <div class="action-box">
-                                            <img alt="Imagen de un alumno haciendo tests online"
-                                                src="assets/images/courses/pic3.jpg" />
-                                            <a class="btn" href="https://api.whatsapp.com/send?phone=34693573074"
-                                                target="_blank">Leer Más</a>
-                                        </div>
-                                        <div class="info-bx text-center">
-                                            <h5>Teoría Online</h5>
-                                            <span>Prepara el examen teórico desde la comodidad de tu casa.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="section-area section-sp1 ovpr-dark bg-fix online-cours"
                     style="background-image:url(assets/images/background/bg1.jpg);">
                     <div class="container">
@@ -472,7 +441,9 @@
                                                 </div>
                                             </div>
                                             <div class="event-info">
-                                                <h4 class="event-title"><a href="https://api.whatsapp.com/send?phone=34693573074" target="_blank">Clases prácticas a domicilio</a>
+                                                <h4 class="event-title"><a
+                                                        href="https://api.whatsapp.com/send?phone=34693573074"
+                                                        target="_blank">Clases prácticas a domicilio</a>
                                                 </h4>
                                                 <ul class="media-post">
                                                     <li><a href="#"><i class="fa fa-map-marker"></i> Pueblo de Ojén</a>
@@ -498,7 +469,9 @@
                                                 </div>
                                             </div>
                                             <div class="event-info">
-                                                <h4 class="event-title"><a href="https://api.whatsapp.com/send?phone=34693573074" target="_blank">Prepara el teórico online</a></h4>
+                                                <h4 class="event-title"><a
+                                                        href="https://api.whatsapp.com/send?phone=34693573074"
+                                                        target="_blank">Prepara el teórico online</a></h4>
                                                 <ul class="media-post">
                                                     <li><a href="#"><i class="fa fa-clock-o"></i> A tu ritmo</a></li>
                                                 </ul>
@@ -523,7 +496,9 @@
                                                 </div>
                                             </div>
                                             <div class="event-info">
-                                                <h4 class="event-title"><a href="https://api.whatsapp.com/send?phone=34693573074" target="_blank">Profesionales a tu servicio</a></h4>
+                                                <h4 class="event-title"><a
+                                                        href="https://api.whatsapp.com/send?phone=34693573074"
+                                                        target="_blank">Profesionales a tu servicio</a></h4>
                                                 <ul class="media-post">
                                                     <li><a href="#"><i class="fa fa-star"></i> Valoraciones
                                                             excelentes</a></li>
@@ -551,7 +526,6 @@
 
                         <div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
 
-                            <!-- Testimonio 1 -->
                             <div class="item">
                                 <div class="testimonial-bx">
                                     <div class="testimonial-header d-flex align-items-center gap-2">
@@ -574,7 +548,6 @@
                                 </div>
                             </div>
 
-                            <!-- Testimonio 2 -->
                             <div class="item">
                                 <div class="testimonial-bx">
                                     <div class="testimonial-header d-flex align-items-center gap-2">
@@ -625,14 +598,13 @@
                 </style>
 
 
-                <!-- =================== PREGUNTAS FRECUENTES (FAQ) =================== -->
                 <div id="faqs-section" class="section-area section-sp1">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12">
                                 <div class="heading-bx left">
                                     <h2 class="m-b10 title-head">Preguntas <span>Frecuentes</span></h2>
-                                    <p>Resolvemos las dudas más comunes sobre nuestros cursos de coche y moto en Ojén.
+                                    <p>Resolvemos las dudas más comunes sobre nuestros cursos de coche y moto en Ojén.</br></br>
                                         Si necesitas más información, ¡contáctanos sin compromiso!</p>
                                 </div>
 
@@ -749,104 +721,7 @@
             </div>
         </div>
         <footer>
-            <div class="footer-top">
-                <div class="pt-exebar">
-                    <div class="container">
-                        <div class="d-flex align-items-stretch">
-                            <div class="pt-logo mr-auto">
-                                <a href="index.html"><img alt="" src="assets/images/logo-white.png" /></a>
-                            </div>
-                            <div class="pt-social-link">
-                                <ul class="list-inline m-a0">
-                                    <li><a href="https://www.instagram.com/autoescuelaalfa" target="_blank"><i
-                                                class="fa fa-instagram"></i></a></li>
-                                    <li><a href="https://share.google/tQ9X2rXULFIEXZGDZ" target="_blank"><i
-                                                class="fa fa-google"></i></a> <!-- O quizás fab fa-google --></li>
-                                    <li><a class="custom-0" href="https://api.whatsapp.com/send?phone=34693573074"
-                                            target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="pt-btn-join">
-                                <a class="btn" href="https://api.whatsapp.com/send?phone=34693573074">¡Empieza ya!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
-                            <div class="widget">
-                                <h5 class="footer-title">Mantente Informado</h5>
-                                <p class="text-capitalize m-b20">Te ayudamos a estar al día de las últimas novedades y
-                                    consejos para tu carnet.</p>
-                                <div class="join-content-bx text-white">
-                                    <a href="https://api.whatsapp.com/send?phone=34693573074"
-                                        class="btn button-md">Contacta Ahora</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-5 col-md-7 col-sm-12">
-                            <div class="row">
-                                <div class="col-4 col-lg-4 col-md-4 col-sm-4">
-                                    <div class="widget footer_widget">
-                                        <h5 class="footer-title">Enlaces Útiles</h5>
-                                        <ul>
-                                            <li><a href="index.html">Inicio</a></li>
-                                            <li><a href="#diferencial">Por qué elegirnos</a></li>
-                                            <li><a href="https://matferline.com/alumno/index.php" target="_blank">Tests
-                                                    Online</a></li>
-                                            <li><a href="https://sedeclave.dgt.gob.es/WEB_NOTP_CONSULTA/consultaNota.faces"
-                                                    target="_blank">Notas Examen</a></li>
-                                            <li><a href="https://api.whatsapp.com/send?phone=34693573074">Contacto</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-lg-4 col-md-4 col-sm-4">
-                                    <div class="widget footer_widget">
-                                        <h5 class="footer-title">Síguenos</h5>
-                                        <ul>
-                                            <li>
-                                                <a href="https://www.instagram.com/autoescuelaalfa" target="_blank">
-                                                    <i class="fa fa-instagram"></i> Instagram
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://share.google/tQ9X2rXULFIEXZGDZ" target="_blank">
-                                                    <i class="fa fa-google"></i> Google
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://api.whatsapp.com/send?phone=34693573074"
-                                                    target="_blank">
-                                                    <i class="fa fa-whatsapp"></i> WhatsApp
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="col-4 col-lg-4 col-md-4 col-sm-4">
-                                    <div class="widget footer_widget">
-                                        <h5 class="footer-title">Cursos</h5>
-                                        <ul>
-                                            <li><a href="https://api.whatsapp.com/send?phone=34693573074">Permiso B</a>
-                                            </li>
-                                            <li><a href="https://api.whatsapp.com/send?phone=34693573074">Permiso AM</a>
-                                            </li>
-                                            <li><a href="https://api.whatsapp.com/send?phone=34693573074">Permiso A2</a>
-                                            </li>
-                                            <li><a href="https://api.whatsapp.com/send?phone=34693573074">Permiso A</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+            
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row">
@@ -859,8 +734,8 @@
         </footer>
         <button class="back-to-top fa fa-chevron-up"></button>
         <a href="https://api.whatsapp.com/send?phone=34693573074" class="whatsapp-float" target="_blank">
-				<i class="fa fa-whatsapp"></i>
-			</a>
+            <i class="fa fa-whatsapp"></i>
+        </a>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
