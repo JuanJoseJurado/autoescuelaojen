@@ -335,7 +335,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="card shadow-lg h-100 border-0 rounded-3 overflow-hidden custom-card">
+                                <div class="card shadow-lg h-100 border-0 rounded-4 overflow-hidden custom-card">
                                     <div class="image-wrapper">
                                         <img src="assets/images/our-services/casa.jpg"
                                             class="card-img-top img-fluid img-hover-zoom" alt="Clases teóricas online">
@@ -395,7 +395,7 @@
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                                <div class="card shadow-lg h-100 border-0 rounded-3 overflow-hidden custom-card">
+                                <div class="card shadow-lg h-100 border-0 rounded-4 overflow-hidden custom-card">
                                     <div class="image-wrapper">
                                         <img src="assets/images/our-services/coche.jpg"
                                             class="card-img-top img-fluid img-hover-zoom"
@@ -461,6 +461,88 @@
                         </div>
                     </div>
                 </div>
+
+                <style>
+                    .custom-card {
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        background-color: #fff;
+                    }
+
+                    .custom-card:hover {
+                        transform: translateY(-8px);
+                        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+                    }
+
+                    .image-wrapper {
+                        overflow: hidden;
+                        border-top-left-radius: calc(0.5rem - 1px);
+                        border-top-right-radius: calc(0.5rem - 1px);
+                    }
+
+                    .img-hover-zoom {
+                        transition: transform 0.5s ease;
+                    }
+
+                    .custom-card:hover .img-hover-zoom {
+                        transform: scale(1.08);
+                    }
+
+                    .bg-primary-light {
+                        background-color: #e0f2f7 !important;
+                        /* Un tono más claro de tu color primario */
+                    }
+
+                    .text-dark {
+                        color: #343a40 !important;
+                    }
+
+                    /* Estilos para el acordeón moderno */
+                    .modern-accordion .accordion-item {
+                        border: none;
+                        margin-bottom: 0.5rem;
+                        background-color: transparent;
+                    }
+
+                    .modern-accordion .custom-accordion-button {
+                        background-color: #f8f9fa;
+                        color: #007bff;
+                        border-radius: 0.5rem;
+                        padding: 0.75rem 1.25rem;
+                        font-weight: bold;
+                        transition: background-color 0.3s ease, color 0.3s ease;
+                        border: 1px solid #dee2e6;
+                    }
+
+                    .modern-accordion .custom-accordion-button:hover {
+                        background-color: #e2e6ea;
+                        color: #0056b3;
+                    }
+
+                    .modern-accordion .custom-accordion-button:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+
+                    .modern-accordion .custom-accordion-body {
+                        padding: 1rem 1.5rem;
+                        line-height: 1.7;
+                        color: #555;
+                        background-color: #fdfdfd;
+                        border-left: 3px solid #007bff;
+                        margin-top: 0.5rem;
+                        border-radius: 0.25rem;
+                        text-align: justify;
+                    }
+
+                    /* Responsive adjustments */
+                    @media (max-width: 768px) {
+                        .col-lg-6 {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+                    }
+                </style>
 
                 <style>
                     .custom-card {
