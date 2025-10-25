@@ -17,31 +17,30 @@
   --nav-font: "Raleway",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Colores Globales - Las siguientes variables de color se utilizan en todo el sitio web. Actualizarlas aquí cambiará el esquema de color de todo el sitio web */
 :root { 
-  --background-color: #040000; /* Background color for the entire website, including individual sections */
-  --default-color: #f8f8f8; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e59d02; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #191919; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color:ww #ffffff; /* Color de fondo para todo el sitio web, incluidas las secciones individuales */
+  --default-color: #040000; /* Color predeterminado utilizado para la mayor parte del contenido de texto en todo el sitio web */
+  --heading-color: #040000; /* Color para encabezados, subtítulos y títulos en todo el sitio web */
+  --accent-color: #48a054; /* Color de acento que representa su marca en el sitio web. Se utiliza para botones, enlaces y otros elementos que necesitan destacar */
+  --surface-color: #d1d1d1; /* El color de superficie se utiliza como fondo de elementos con caja (boxed elements) dentro de las secciones, como tarjetas, cajas de iconos u otros elementos que requieren una separación visual del fondo global. */
+  --contrast-color: #ffffff; /* Color de contraste para el texto, asegurando la legibilidad contra fondos de colores de acento, encabezado o predeterminados. */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Colores del Menú de Navegación - Las siguientes variables de color se utilizan específicamente para el menú de navegación. Están separadas de los colores globales para permitir más opciones de personalización */
 :root {
-  --nav-color: #f8f8f8;  /* The default color of the main navmenu links */
-  --nav-hover-color: #e59d02; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #1b1a1a; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1b1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #f8f8f8; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e59d02; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #040000;  /* El color predeterminado de los enlaces del menú de navegación principal */
+  --nav-hover-color: #48a054; /* Aplicado a los enlaces del menú de navegación principal cuando se les pasa el ratón por encima (hover) o están activos */
+  --nav-mobile-background-color:ww #ffffff; /* Se utiliza como color de fondo para el menú de navegación móvil */
+  --nav-dropdown-background-color:ww #ffffff; /* Se utiliza como color de fondo para los elementos desplegables (dropdown items) que aparecen al pasar el ratón sobre los elementos de navegación primarios */
+  --nav-dropdown-color: #f8f8f8; /* Se utiliza para los enlaces de navegación de los elementos desplegables en el menú de navegación. */
+  --nav-dropdown-hover-color: rgb(72, 160, 84); /* Similar a --nav-hover-color, este color se aplica a los enlaces de navegación desplegables cuando se les pasa el ratón por encima. */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
+/* Preajustes de Color - Estas clases anulan los colores globales cuando se aplican a cualquier sección o elemento, permitiendo la reutilización del mismo esquema de color. */
 .light-background {
-  --background-color: #1b1a1a;
-  --surface-color: #282828;
+  --background-color: #d1d1d1;
+  --surface-color: #d1d1d1;
 }
 
 .dark-background {
@@ -204,7 +203,7 @@ h6 {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(248, 249, 250, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: -1;
@@ -543,6 +542,18 @@ h6 {
   color: var(--accent-color);
 }
 
+/* Footer association logo sizing */
+.footer .footer-associate h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.footer .associate-logo {
+  max-width: 180px;
+  height: auto;
+  display: inline-block;
+  border-radius: 15px;
+}
+
 .footer .footer-contact p {
   margin-bottom: 5px;
 }
@@ -761,7 +772,7 @@ section,
 
 .hero .hero-wrapper {
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -787,22 +798,36 @@ section,
 }
 
 .hero .hero-title .typed {
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #8b5cf6 50%) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /* Mostrar texto con color sólido en lugar de degradado para evitar efectos de transparencia/fade */
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: rgb(72, 160, 84) !important; /* Safari/Chrome */
+  color: rgb(72, 160, 84) !important;
   position: relative;
 }
 
 .hero .hero-title .typed::after {
+  /* Línea decorativa: usar color sólido igual al texto */
   content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #8b5cf6 50%) 100%);
+  background: var(--accent-color);
   border-radius: 2px;
+}
+
+/* Evitar que Typed.js aplique un efecto de fade-out vía la clase injected `.typed-fade-out` */
+.typed-fade-out {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+.typed-cursor.typed-cursor--blink.typed-fade-out {
+  -webkit-animation: none !important;
+  animation: none !important;
 }
 
 .hero .hero-description {
